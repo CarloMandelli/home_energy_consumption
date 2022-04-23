@@ -1,0 +1,15 @@
+# LOG LEVEL see Pino documentation
+LOG_LEVEL=info
+# INFLUX client configuration
+INFLUX_HOST=http://xx.xx.xx.xx:xxxx
+INFLUX_TOKEN=<yourToken>
+INFLUX_ORG=<yourOrg>
+INFLUX_BUCKET=<yourBucket>
+# if true the container start without run any logic (for testing only the container)
+TEST=FALSE
+# to reduce network traffic and logic load you can schedule the connection with the plugs
+SCHEDULED={"start": {"hour":"07", "minute":"30"}, "end" :{"hour":23, "minute":"07"}, "timezone":"Europe/Rome"}
+# array of devices. You can get all the value from tuya site
+DEVICES= "[{
+          name: 'xxxxxx', id: 'xxxxxx', key: 'xxxxxx'
+        }]"

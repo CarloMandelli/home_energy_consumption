@@ -1,0 +1,21 @@
+{
+  "name": "home_energy_consumption",
+  "version": "1.0.0",
+  "description": "Monitoring home energy consumption",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Carlo Mandelli",
+  "license": "MIT",
+  "dependencies": {
+    "@influxdata/influxdb-client": "^1.23.0",
+    "@influxdata/influxdb-client-apis": "^1.23.0",
+    "dotenv": "^16.0.0",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.34",
+    "node-schedule": "^2.1.0",
+    "pino": "^7.9.1",
+    "tuyapi": "github:codetheweb/tuyapi"
+  }
+}
